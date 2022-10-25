@@ -45,7 +45,7 @@ Over the following chapters a concrete vision for our project will form, startin
 Inspired by platforms like “Shpock” and “eBay Kleinanzeigen” we strive to provide a more streamlined experienced with equal treatment of listings, opposed to the industry standard of offering commercial sellers preferred treatment. Ease of use and secure accounts are our top priority to ensure a good online negotiating experience.
 
 ### 2.2	Use Case Diagram
-_Following soon_
+![Use Case Diagram](/resources/UseCaseDiagram.png)
 
 ### 2.3	Technology Stack
 The technologies we will be using are:
