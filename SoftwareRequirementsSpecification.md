@@ -1,6 +1,7 @@
 # cybuy - Software Requirements Specification 
 
 ## 1.	Introduction
+![Landing Page](/mockups/Landing_Page.png)
 
 ### 1.1	Purpose
 This Software Requirements Specification (SRS) describes all specifications for the webservice “cybuy”. It includes an overview about this project and its vision, detailed information about the planned features and boundary conditions of the development process.
