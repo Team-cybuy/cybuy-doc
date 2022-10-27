@@ -34,7 +34,10 @@ A mask for payments will be provided, but this functionality will only be stubbe
 | tbd         | to be determined                       |
 
 ### 1.4	References
-_Following soon_
+| Title           | Organisation |
+| --------------- | ------------ |
+| Code Repository | Team cybuy   |
+| Blog            | Team cybuy   |
 
 ### 1.5	Overview
 Over the following chapters a concrete vision for our project will form, starting with the Overall Description and slowly narrowing down to a more concrete idea.
@@ -77,38 +80,32 @@ Testing:
 ### 3.1	Functionality
 The following will detail the previously described Use Cases and their respective functionality.
 
--	3.1.1 Posting a listing
--	3.1.2 View listings
--	3.1.3 Filter listings
--	3.1.4 Edit listings
--	3.1.5 Account System
--	3.1.6 Messaging subsystem
--	3.1.7 Negotiation functionality
--	3.1.8 Stubbed payment functionality
-
-#### 3.1.1 Posting a listing
-_Following soon_
-
-#### 3.1.1 View listings
-_Following soon_
-
-#### 3.1.1 Filter listings
-_Following soon_
-
-#### 3.1.1 Edit listings
-_Following soon_
-
-#### 3.1.1 Account System
-_Following soon_
-
-#### 3.1.1 Messaging subsystem
-_Following soon_
-
-#### 3.1.1 Negotiation functionality
-_Following soon_
-
-#### 3.1.1 Stubbed payment functionality
-_Following soon_
+-	Session Management System
+    -   [Keep track of stats and reviews](/use_cases/KeepTrackOfStatsAndReviews.md)
+    -   [Store your chats](/use_cases/StoreYourChats.md)
+    -   [Populate profile page](/use_cases/PopulateProfilePage.md)
+    -   [Staying logged in](/use_cases//StayingLoggedIn.md)
+-	Social System
+    -   [Send upfront offer](/use_cases/SendUpfrontOffer.md)
+    -   [Chatting](/use_cases/Chatting.md)
+    -   [Send offer during negotiation](/use_cases/SendOfferDuringNegotiations.md)
+    -   [Update interactive message](/use_cases/UpdateInteractiveMessage.md)
+    -   [Saving to favourites](/use_cases/SavingToFavourites.md)
+    -   [Reporting](/use_cases/Reporting.md)
+    -   [Manage own profile](/use_cases/ManageOwnProfile.md)
+-	Account System
+    -   [Account creation](/use_cases/AccountCreation.md)
+    -   [Logging in](/use_cases/LoggingIn.md)
+    -   [Logging out](/use_cases/LogginOut.md)
+-	Inventory System
+    -   [Searching](/use_cases/Searching.md)
+    -   [Filtering](/use_cases/Filtering.md)
+    -   [Create a listing](/use_cases/CreateAListing.md)
+    -   [Manage own listing](/use_cases/ManageOwnListing.md)
+-	Administration Subsystem
+    -   [Manage users](/use_cases/ManageUsers.md)
+    -   [Moderate reports](/use_cases/ModerateReports.md)
+    -   [Manage listings](/use_cases/ManageListings.md)
 
 ### 3.2	Usability
 In part fueled by our own frustration with the widely inconsistent looks across subpages of popular sites we plan to minimize clutter and make everything easy to read and use.
