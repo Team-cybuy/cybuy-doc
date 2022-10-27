@@ -34,10 +34,10 @@ A mask for payments will be provided, but this functionality will only be stubbe
 | tbd         | to be determined                       |
 
 ### 1.4	References
-| Title           | Organisation |
-| --------------- | ------------ |
-| Code Repository | Team cybuy   |
-| Blog            | Team cybuy   |
+| Title                                                  | Organisation |
+| ------------------------------------------------------ | ------------ |
+| [Code Repository](https://github.com/Team-cybuy/cybuy) | Team cybuy   |
+| [Blog](https://medium.com/@cybuysite)                  | Team cybuy   |
 
 ### 1.5	Overview
 Over the following chapters a concrete vision for our project will form, starting with the Overall Description and slowly narrowing down to a more concrete idea.
