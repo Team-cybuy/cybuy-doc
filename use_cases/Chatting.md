@@ -1,0 +1,1 @@
+![Mockup](/mockups/Chat_page.png)

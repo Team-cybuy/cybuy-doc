@@ -6,7 +6,10 @@ This use case is for all the users not wanting to spend time negotiating. If the
 ## 2. Mockup
 _Following soon_
 
-## 3. Preconditions
+## 3. Activity Diagram
+![Activity Diagram](/resources/activity_diagrams/ActivityDiagramSendUpfrontOffer.png)
+
+## 4. Preconditions
 - Sender and recipient exist
 - Item has not been sold yet
 

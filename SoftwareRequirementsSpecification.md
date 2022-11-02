@@ -87,16 +87,16 @@ The following will detail the previously described Use Cases and their respectiv
     -   [Populate profile page](/use_cases/PopulateProfilePage.md)
     -   [Staying logged in](/use_cases//StayingLoggedIn.md)
 -	Social System
-    -   [Send upfront offer](/use_cases/SendUpfrontOffer.md)
+    -   [Send upfront offer](/use_cases/SendUpfrontOffer.md) (with Activity Diagram)
     -   [Chatting](/use_cases/Chatting.md)
-    -   [Send offer during negotiation](/use_cases/SendOfferDuringNegotiations.md)
+    -   [Send offer during negotiation](/use_cases/SendOfferDuringNegotiations.md) (with Activity Diagram)
     -   [Update interactive message](/use_cases/UpdateInteractiveMessage.md)
     -   [Saving to favourites](/use_cases/SavingToFavourites.md)
-    -   [Reporting](/use_cases/Reporting.md)
+    -   [Reporting](/use_cases/Reporting.md) (with Activity Diagram)
     -   [Manage own profile](/use_cases/ManageOwnProfile.md)
 -	Account System
-    -   [Account creation](/use_cases/AccountCreation.md)
-    -   [Logging in](/use_cases/LoggingIn.md)
+    -   [Account creation](/use_cases/AccountCreation.md) (UCRS [here](/use_cases/realization_specifications/UCRSAccountCreation.md))
+    -   [Logging in](/use_cases/LoggingIn.md) (UCRS [here](/use_cases/realization_specifications/UCRSLoggingIn.md))
     -   [Logging out](/use_cases/LogginOut.md)
 -	Inventory System
     -   [Searching](/use_cases/Searching.md)
