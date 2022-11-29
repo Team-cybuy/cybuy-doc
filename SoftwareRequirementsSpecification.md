@@ -56,10 +56,10 @@ The technologies we will be using are:
 
 Backend:
 -	Spring Boot
--	Database solution to be determined
+-	PostgreSQL
 
 Frontend:
--	Website with React or Angular
+-	Angular
 
 IDE:
 -	IntelliJ
@@ -71,7 +71,7 @@ Project Management:
 -	Discord
 
 Deployment:
--	To be determined
+-	Mono-/Modulithic Server
 
 Testing:
 -	JUnit
@@ -128,6 +128,7 @@ _Following soon_
 
 #### 3.4.1	Capacity
 Since Germans are our target audience and respecting the existing platforms, we aim to manage a few thousand requests in a short time at maximum. Further scalability can be discussed through the use of caching and more powerful hardware once response times start to get noticeable.
+This fact combined with the relatively unknown task complexity strongly hints towards developing the website as a at least a Monolith and, if possible, at best a Modulith.
 
 #### 3.4.2	Storage solutions
 Text based listings should not be storage intensive, however accompanying images could be. This could be mitigated using external storage providers and resizing images before storing them.
@@ -136,12 +137,12 @@ Text based listings should not be storage intensive, however accompanying images
 Response times should be fast wherever possible and offset by a clear loading indicator where necessary. It is important to minimize the number of round trips and to utilize asynchronous loading where possible.
 
 ### 3.5	Supportability
-Outside of clean code nothing has been decided on as of yet.
+Readable code and comments are our goto way of ensuring this in the future. This repository and the weekly blog will function well as an additional resource. By working off of Spring Boot and Angular's wide use we also gain the support of our frameworks for the foreseeable future while the need to stick to something easier limits us in the realm of a mono-/modulith.
 
 ### 3.6	Design Constraints
 Readability and usability come first for our general layout. As listings count as user generated content, we will try to provide simple guidelines for them too follow our lead.
 
-The concrete front and backend technology will be decided on in the future.
+No further constraints affecting our project are imposed by the use of Angular and Spring Boot.
 
 ### 3.7	On-line User Documentation and Help System Requirements
 The interface itself should be intuitive to use, however it is not off the table to implement a first-time visitor tutorial and give hints while hovering over a button.
@@ -152,16 +153,14 @@ No purchased components are planned to be used.
 ### 3.9	Interfaces
 
 #### 3.9.1	User Interfaces
-_Following soon_
+Check out [our Mockups](/mockups)!
 
-#### 3.9.2	Hardware Interfaces
-(n/a)
-
-#### 3.9.3	Software Interfaces
+#### 3.9.2	Software Interfaces
 No native apps are planned, so the app should run well and consistent across the three major flavors of browsers.
+Our API will be limited to use by our own Website only.
 
-#### 3.9.4	Communications Interfaces
-Communication will happen over web requests.
+#### 3.9.3	Communications Interfaces
+Communication will happen over API requests to our backend.
 
 ### 3.10	Licensing Requirements
 No license has been decided as of yet. At worst the project will stay source available and at best receive a proper open source license.
@@ -170,7 +169,7 @@ No license has been decided as of yet. At worst the project will stay source ava
 No infringement on any other party also named “cybuy” or a variation thereof is intended, this is not a commercial product or storefront and will not generate revenue of any sort. The software is provided as is and without any warranty. The code is at least source available and at best open source. Licensing will be decided in the future. Unless annotated otherwise all code is © Team cybuy. Likewise our name and logo cannot be used in any commercial way except ad supported news coverage.
 
 ### 3.12	Applicable Standards
-Clean code standards are desirable and will be followed as close as possible. As such maintenance should be easy being supported by clearly labeled functions and in case of doubt comments.
+Clean code standards are desirable and may be followed wherever they don't hinder progress or limit our own styles.
 
 ## 4.	Supporting Information
 For further information please reach out to the team via the associated blog, our e-mail or via the websites contact form.
