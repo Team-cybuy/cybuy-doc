@@ -19,6 +19,7 @@
 |                   | …                           |
 
 ## Architecture Decisions and Design Patterns
+All our decisions were made based around Modifiability since we deemed it very important.
 - Using well known Front- and Backend solutions
 - Mono-/Modulithic design for faster development allowed by limited target audience
 - Easily bootable in a test environment
