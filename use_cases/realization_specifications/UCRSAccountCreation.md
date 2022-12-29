@@ -1,7 +1,7 @@
 # 1.	Introduction
 
 ## 1.1	Purpose
-This Use-Case Realization Specification (UCRS) describes all specifications for the Use-Case “Creating Account” for the webservice “cybuy”. It includes an overview and more detailed information about the planned implementation of the use case.
+This Use-Case Realization Specification (UCRS) describes all specifications for the Use-Case “Creating Account” for the website “cybuy”. It includes an overview and more detailed information about the planned implementation of the use case.
 
 ## 1.2	Scope
 Access to our webservice will be provided through a web interface on a website.

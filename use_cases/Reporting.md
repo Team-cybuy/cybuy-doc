@@ -14,6 +14,3 @@ _Following soon_
 
 ## 4. Postconditions
 - The content has been flagged for manual review
-
-## 5. Effort Estimation
-_Following soon_

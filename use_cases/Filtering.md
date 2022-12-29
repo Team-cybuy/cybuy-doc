@@ -1,13 +1,7 @@
 # Use-Case Specification: Filtering
 
 ## 1. Brief Description
-This use case of the backend allows storing and restoring the reviews, rating and stats of a user.
-- Niceness rating (based on user feedback)
-- Reply speed (measured automatically)
-- Shipping speed (based on user feedback)
-- Feedback text / Review
-- Amount of items sold (have to be marked as sold, not removed from the platform)
-- Account age
+This use case describes filtering search results with parameters.
 
 ## 2. Mockup
 ![Search Page](/mockups/Search_Page.png)
@@ -17,6 +11,3 @@ This use case of the backend allows storing and restoring the reviews, rating an
 
 ## 4. Postconditions
 - All search queries will be filtered further
-
-## 5. Effort Estimation
-_Following soon_

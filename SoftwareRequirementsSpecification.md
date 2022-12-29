@@ -10,22 +10,18 @@ This Software Requirements Specification (SRS) describes all specifications for 
 Access to our webservice will be provided through a web interface on a website.
 No standalone apps are planned.
 
-Planned subsystems:
-•	Account system:
+Planned subsystems:\
+•	Account system:\
 Persistent accounts can be created, managed and deleted with the associated credentials.
 User data is stored server side and if possible in hashed or encrypted form.
 Exceptions may be made for image contents with third party hosting providers.
 
-•	Marketplace infrastructure:
+•	Marketplace infrastructure:\
 This core module of the webservice will allow users to add listings and view each other’s.
 A suite of subpages will be used to visualize the listings filled with user provided data.
 
-•	Messaging infrastructure:
-An existing messaging framework is preferred alongside our own additions to allow for interactive messages to guide the flow of the negotiation process.
-
-•	Payment subsystem:
-A mask for payments will be provided, but this functionality will only be stubbed as this is not a commercial project.
-
+•	Negotiation subsystem:\
+If the seller doesn't agree with the price they can send a binding offer to the seller. They can select the amount and proposed method of payment from a selection. Sellers can respond with their own offers. Offers can be accepted, rejected or countered.
 
 ### 1.3	Definitions, Acronyms, and Abbreviations
 | Abbrevation | Explanation                            |
@@ -35,10 +31,11 @@ A mask for payments will be provided, but this functionality will only be stubbe
 | tbd         | to be determined                       |
 
 ### 1.4	References
-| Title                                                  | Organisation |
-| ------------------------------------------------------ | ------------ |
-| [Code Repository](https://github.com/Team-cybuy/cybuy) | Team cybuy   |
-| [Blog](https://medium.com/@cybuysite)                  | Team cybuy   |
+| Title                                                                                    | Organisation |
+| ---------------------------------------------------------------------------------------- | ------------ |
+| [Code Repository](https://github.com/Team-cybuy/cybuy)                                   | Team cybuy   |
+| [Blog](https://medium.com/@cybuysite)                                                    | Team cybuy   |
+| [SAD](/SoftwareArchitectureDocument.md)                                                  | Team cybuy   |
 
 ### 1.5	Overview
 Over the following chapters a concrete vision for our project will form, starting with the Overall Description and slowly narrowing down to a more concrete idea.
@@ -46,9 +43,10 @@ Over the following chapters a concrete vision for our project will form, startin
 ## 2.	Overall Description
 
 ### 2.1	Vision
-Inspired by platforms like “Shpock” and “eBay Kleinanzeigen” we strive to provide a more streamlined experienced with equal treatment of listings, opposed to the industry standard of offering commercial sellers preferred treatment. Ease of use and secure accounts are our top priority to ensure a good online negotiating experience.
+Inspired by platforms like “Shpock” and “eBay Kleinanzeigen” we strive to provide a more streamlined experienced with equal treatment of listings, opposed to the industry standard of offering commercial sellers preferred treatment. Ease of use and maintainability are our top priorities to ensure a good online negotiating experience.
 
 ### 2.2	Use Case Diagram
+Highlighted are the (almost) implemented Use Cases.\
 ![Use Case Diagram](/resources/UseCaseDiagram.png)
 
 ### 2.3	Technology Stack
@@ -71,42 +69,40 @@ Project Management:
 -	Discord
 
 Deployment:
--	Mono-/Modulithic Server
+-	Modulithic Server
 
 Testing:
--	JUnit
+-	tbd
 
 ## 3.	Specific Requirements
 
 ### 3.1	Functionality
-The following will detail the previously described Use Cases and their respective functionality.
+The following will list all and detail some of the previously described Use Cases which are not self explanatory and their respective functionality.
 
 -	Session Management System
     -   [Keep track of stats and reviews](/use_cases/KeepTrackOfStatsAndReviews.md)
-    -   [Store your chats](/use_cases/StoreYourChats.md)
-    -   [Populate profile page](/use_cases/PopulateProfilePage.md)
-    -   [Staying logged in](/use_cases//StayingLoggedIn.md)
+    -   Populate profile page
+    -   Staying logged in
 -	Social System
-    -   [Send upfront offer](/use_cases/SendUpfrontOffer.md) (with Activity Diagram)
-    -   [Chatting](/use_cases/Chatting.md)
-    -   [Send offer during negotiation](/use_cases/SendOfferDuringNegotiations.md) (with Activity Diagram)
-    -   [Update interactive message](/use_cases/UpdateInteractiveMessage.md)
-    -   [Saving to favourites](/use_cases/SavingToFavourites.md)
+    -   [Send offer](/use_cases/SendOffer.md) (with Activity Diagram)
+    -   Saving to favourites
     -   [Reporting](/use_cases/Reporting.md) (with Activity Diagram)
-    -   [Manage own profile](/use_cases/ManageOwnProfile.md)
+    -   Manage own profile
+    -   [Manage own listing](/use_cases/ManageOwnListing.md)
+    -   Update purchase information
 -	Account System
-    -   [Account creation](/use_cases/AccountCreation.md) (UCRS [here](/use_cases/realization_specifications/UCRSAccountCreation.md))
-    -   [Logging in](/use_cases/LoggingIn.md) (UCRS [here](/use_cases/realization_specifications/UCRSLoggingIn.md))
-    -   [Logging out](/use_cases/LogginOut.md)
+    -   Account creation (UCRS [here](/use_cases/realization_specifications/UCRSAccountCreation.md))
+    -   Logging in (UCRS [here](/use_cases/realization_specifications/UCRSLoggingIn.md))
+    -   Logging out
 -	Inventory System
     -   [Searching](/use_cases/Searching.md)
+    -   Serve Listing
+    -   Create a listing
     -   [Filtering](/use_cases/Filtering.md)
-    -   [Create a listing](/use_cases/CreateAListing.md)
-    -   [Manage own listing](/use_cases/ManageOwnListing.md)
 -	Administration Subsystem
-    -   [Manage users](/use_cases/ManageUsers.md)
-    -   [Moderate reports](/use_cases/ModerateReports.md)
-    -   [Manage listings](/use_cases/ManageListings.md)
+    -   Manage users
+    -   View reports
+    -   Delete listings
 
 ### 3.2	Usability
 In part fueled by our own frustration with the widely inconsistent looks across subpages of popular sites we plan to minimize clutter and make everything easy to read and use.
@@ -124,11 +120,11 @@ The plan is to have the service reachable for as much time as possible. Generall
 However, we must think about outside factors too, like DDOS attacks and spam bots. Mitigation for such threats could be accomplished with external services like “Cloudflare” however and will not be in scope for this project.
 
 ### 3.4	Performance
-_Following soon_
+Due to the target audience being limited to Germany the modulithic approach should run fast enough with sufficient RAM and a server CPU for the database querries.
 
 #### 3.4.1	Capacity
-Since Germans are our target audience and respecting the existing platforms, we aim to manage a few thousand requests in a short time at maximum. Further scalability can be discussed through the use of caching and more powerful hardware once response times start to get noticeable.
-This fact combined with the relatively unknown task complexity strongly hints towards developing the website as a at least a Monolith and, if possible, at best a Modulith.
+Since we also have to respect the existing platforms, we aim to manage a few thousand requests in a short time at maximum. Further scalability can be discussed through the use of caching and more powerful hardware once response times start to get noticeable.
+This fact combined with the relatively unknown task complexity strongly influenced the decision to go modulithic.
 
 #### 3.4.2	Storage solutions
 Text based listings should not be storage intensive, however accompanying images could be. This could be mitigated using external storage providers and resizing images before storing them.
@@ -136,11 +132,11 @@ Text based listings should not be storage intensive, however accompanying images
 #### 3.4.3	Response times
 Response times should be fast wherever possible and offset by a clear loading indicator where necessary. It is important to minimize the number of round trips and to utilize asynchronous loading where possible.
 
-### 3.5	Supportability
-Readable code and comments are our goto way of ensuring this in the future. This repository and the weekly blog will function well as an additional resource. By working off of Spring Boot and Angular's wide use we also gain the support of our frameworks for the foreseeable future while the need to stick to something easier limits us in the realm of a mono-/modulith.
+### 3.5	Supportability / Maintainability
+Readable code and comments are our goto way of ensuring this in the future. Together with our planned containerisation of the database this will allow swift modification and testing. This repository and the weekly blog will function well as an additional resource. By working off of Spring Boot and Angular's wide use we also gain the support of our frameworks for the foreseeable future while the need to stick to something easier limits us in the realm of a modulith.
 
 ### 3.6	Design Constraints
-Readability and usability come first for our general layout. As listings count as user generated content, we will try to provide simple guidelines for them too follow our lead.
+Readability and usability come first for our general layout. As listings count as user generated content, we will try to provide simple guidelines for them to follow our lead.
 
 No further constraints affecting our project are imposed by the use of Angular and Spring Boot.
 

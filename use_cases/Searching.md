@@ -7,13 +7,7 @@ This use case describes searching the listings for a search term.
 ![Search Page](/mockups/Search_Page.png)
 
 ## 3. Preconditions
-- The user a review submitted for exists
-- The user queried for exists
-- The user giving the rating is entitled / did business with the other user
+- A search term was entered
 
 ## 4. Postconditions
-- The data is updated upon posting a new review
-- Idealy the data is displayed on the profile page
-
-## 5. Effort Estimation
-_Following soon_
+- Only results matching the filters are returned
